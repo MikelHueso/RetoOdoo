@@ -1,0 +1,271 @@
+﻿@page
+@model ODOO.Pages.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>EventEvent</h4> @*Genera una lista enseñando los detalles del elemento seleccionado*@  
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.EventEvent.MessageMainAttachmentId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EventEvent.MessageMainAttachmentId)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EventEvent.Name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EventEvent.Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EventEvent.Active)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EventEvent.Active)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EventEvent.UserId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EventEvent.UserId)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EventEvent.CompanyId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EventEvent.CompanyId)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EventEvent.OrganizerId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EventEvent.OrganizerId)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EventEvent.EventTypeId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EventEvent.EventTypeId)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EventEvent.Color)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EventEvent.Color)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EventEvent.SeatsMax)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EventEvent.SeatsMax)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EventEvent.SeatsAvailability)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EventEvent.SeatsAvailability)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EventEvent.SeatsMin)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EventEvent.SeatsMin)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EventEvent.SeatsReserved)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EventEvent.SeatsReserved)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EventEvent.SeatsAvailable)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EventEvent.SeatsAvailable)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EventEvent.SeatsUnconfirmed)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EventEvent.SeatsUnconfirmed)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EventEvent.SeatsUsed)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EventEvent.SeatsUsed)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EventEvent.DateTz)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EventEvent.DateTz)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EventEvent.DateBegin)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EventEvent.DateBegin)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EventEvent.DateEnd)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EventEvent.DateEnd)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EventEvent.State)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EventEvent.State)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EventEvent.AutoConfirm)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EventEvent.AutoConfirm)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EventEvent.IsOnline)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EventEvent.IsOnline)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EventEvent.AddressId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EventEvent.AddressId)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EventEvent.CountryId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EventEvent.CountryId)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EventEvent.TwitterHashtag)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EventEvent.TwitterHashtag)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EventEvent.Description)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EventEvent.Description)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EventEvent.BadgeFront)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EventEvent.BadgeFront)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EventEvent.BadgeBack)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EventEvent.BadgeBack)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EventEvent.BadgeInnerleft)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EventEvent.BadgeInnerleft)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EventEvent.BadgeInnerright)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EventEvent.BadgeInnerright)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EventEvent.EventLogo)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EventEvent.EventLogo)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EventEvent.CreateUid)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EventEvent.CreateUid)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EventEvent.CreateDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EventEvent.CreateDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EventEvent.WriteUid)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EventEvent.WriteUid)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EventEvent.WriteDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EventEvent.WriteDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EventEvent.WebsiteMetaTitle)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EventEvent.WebsiteMetaTitle)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EventEvent.WebsiteMetaDescription)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EventEvent.WebsiteMetaDescription)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EventEvent.WebsiteMetaKeywords)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EventEvent.WebsiteMetaKeywords)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EventEvent.WebsiteMetaOgImg)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EventEvent.WebsiteMetaOgImg)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EventEvent.WebsiteId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EventEvent.WebsiteId)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EventEvent.IsPublished)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EventEvent.IsPublished)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EventEvent.WebsiteMenu)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EventEvent.WebsiteMenu)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EventEvent.MenuId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EventEvent.MenuId)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.EventEvent.Id">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>

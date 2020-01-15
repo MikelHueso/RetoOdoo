@@ -1,0 +1,240 @@
+﻿@page
+@model ODOO.Pages.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h2>Edit</h2>
+
+<h4>EventEvent</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post"> @* Formulario para Editar un evento *@
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="EventEvent.Id" />
+            <div class="form-group">
+                <label asp-for="EventEvent.MessageMainAttachmentId" class="control-label"></label>
+                <input asp-for="EventEvent.MessageMainAttachmentId" class="form-control" />
+                <span asp-validation-for="EventEvent.MessageMainAttachmentId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EventEvent.Name" class="control-label"></label>
+                <input asp-for="EventEvent.Name" class="form-control" />
+                <span asp-validation-for="EventEvent.Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EventEvent.Active" class="control-label"></label>
+                <input asp-for="EventEvent.Active" class="form-control" />
+                <span asp-validation-for="EventEvent.Active" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EventEvent.UserId" class="control-label"></label>
+                <input asp-for="EventEvent.UserId" class="form-control" />
+                <span asp-validation-for="EventEvent.UserId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EventEvent.CompanyId" class="control-label"></label>
+                <input asp-for="EventEvent.CompanyId" class="form-control" />
+                <span asp-validation-for="EventEvent.CompanyId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EventEvent.OrganizerId" class="control-label"></label>
+                <input asp-for="EventEvent.OrganizerId" class="form-control" />
+                <span asp-validation-for="EventEvent.OrganizerId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EventEvent.EventTypeId" class="control-label"></label>
+                <input asp-for="EventEvent.EventTypeId" class="form-control" />
+                <span asp-validation-for="EventEvent.EventTypeId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EventEvent.Color" class="control-label"></label>
+                <input asp-for="EventEvent.Color" class="form-control" />
+                <span asp-validation-for="EventEvent.Color" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EventEvent.SeatsMax" class="control-label"></label>
+                <input asp-for="EventEvent.SeatsMax" class="form-control" />
+                <span asp-validation-for="EventEvent.SeatsMax" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EventEvent.SeatsAvailability" class="control-label"></label>
+                <input asp-for="EventEvent.SeatsAvailability" class="form-control" />
+                <span asp-validation-for="EventEvent.SeatsAvailability" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EventEvent.SeatsMin" class="control-label"></label>
+                <input asp-for="EventEvent.SeatsMin" class="form-control" />
+                <span asp-validation-for="EventEvent.SeatsMin" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EventEvent.SeatsReserved" class="control-label"></label>
+                <input asp-for="EventEvent.SeatsReserved" class="form-control" />
+                <span asp-validation-for="EventEvent.SeatsReserved" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EventEvent.SeatsAvailable" class="control-label"></label>
+                <input asp-for="EventEvent.SeatsAvailable" class="form-control" />
+                <span asp-validation-for="EventEvent.SeatsAvailable" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EventEvent.SeatsUnconfirmed" class="control-label"></label>
+                <input asp-for="EventEvent.SeatsUnconfirmed" class="form-control" />
+                <span asp-validation-for="EventEvent.SeatsUnconfirmed" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EventEvent.SeatsUsed" class="control-label"></label>
+                <input asp-for="EventEvent.SeatsUsed" class="form-control" />
+                <span asp-validation-for="EventEvent.SeatsUsed" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EventEvent.DateTz" class="control-label"></label>
+                <input asp-for="EventEvent.DateTz" class="form-control" />
+                <span asp-validation-for="EventEvent.DateTz" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EventEvent.DateBegin" class="control-label"></label>
+                <input asp-for="EventEvent.DateBegin" class="form-control" />
+                <span asp-validation-for="EventEvent.DateBegin" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EventEvent.DateEnd" class="control-label"></label>
+                <input asp-for="EventEvent.DateEnd" class="form-control" />
+                <span asp-validation-for="EventEvent.DateEnd" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EventEvent.State" class="control-label"></label>
+                <input asp-for="EventEvent.State" class="form-control" />
+                <span asp-validation-for="EventEvent.State" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EventEvent.AutoConfirm" class="control-label"></label>
+                <input asp-for="EventEvent.AutoConfirm" class="form-control" />
+                <span asp-validation-for="EventEvent.AutoConfirm" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EventEvent.IsOnline" class="control-label"></label>
+                <input asp-for="EventEvent.IsOnline" class="form-control" />
+                <span asp-validation-for="EventEvent.IsOnline" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EventEvent.AddressId" class="control-label"></label>
+                <input asp-for="EventEvent.AddressId" class="form-control" />
+                <span asp-validation-for="EventEvent.AddressId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EventEvent.CountryId" class="control-label"></label>
+                <input asp-for="EventEvent.CountryId" class="form-control" />
+                <span asp-validation-for="EventEvent.CountryId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EventEvent.TwitterHashtag" class="control-label"></label>
+                <input asp-for="EventEvent.TwitterHashtag" class="form-control" />
+                <span asp-validation-for="EventEvent.TwitterHashtag" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EventEvent.Description" class="control-label"></label>
+                <input asp-for="EventEvent.Description" class="form-control" />
+                <span asp-validation-for="EventEvent.Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EventEvent.BadgeFront" class="control-label"></label>
+                <input asp-for="EventEvent.BadgeFront" class="form-control" />
+                <span asp-validation-for="EventEvent.BadgeFront" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EventEvent.BadgeBack" class="control-label"></label>
+                <input asp-for="EventEvent.BadgeBack" class="form-control" />
+                <span asp-validation-for="EventEvent.BadgeBack" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EventEvent.BadgeInnerleft" class="control-label"></label>
+                <input asp-for="EventEvent.BadgeInnerleft" class="form-control" />
+                <span asp-validation-for="EventEvent.BadgeInnerleft" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EventEvent.BadgeInnerright" class="control-label"></label>
+                <input asp-for="EventEvent.BadgeInnerright" class="form-control" />
+                <span asp-validation-for="EventEvent.BadgeInnerright" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EventEvent.EventLogo" class="control-label"></label>
+                <input asp-for="EventEvent.EventLogo" class="form-control" />
+                <span asp-validation-for="EventEvent.EventLogo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EventEvent.CreateUid" class="control-label"></label>
+                <input asp-for="EventEvent.CreateUid" class="form-control" />
+                <span asp-validation-for="EventEvent.CreateUid" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EventEvent.CreateDate" class="control-label"></label>
+                <input asp-for="EventEvent.CreateDate" class="form-control" />
+                <span asp-validation-for="EventEvent.CreateDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EventEvent.WriteUid" class="control-label"></label>
+                <input asp-for="EventEvent.WriteUid" class="form-control" />
+                <span asp-validation-for="EventEvent.WriteUid" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EventEvent.WriteDate" class="control-label"></label>
+                <input asp-for="EventEvent.WriteDate" class="form-control" />
+                <span asp-validation-for="EventEvent.WriteDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EventEvent.WebsiteMetaTitle" class="control-label"></label>
+                <input asp-for="EventEvent.WebsiteMetaTitle" class="form-control" />
+                <span asp-validation-for="EventEvent.WebsiteMetaTitle" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EventEvent.WebsiteMetaDescription" class="control-label"></label>
+                <input asp-for="EventEvent.WebsiteMetaDescription" class="form-control" />
+                <span asp-validation-for="EventEvent.WebsiteMetaDescription" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EventEvent.WebsiteMetaKeywords" class="control-label"></label>
+                <input asp-for="EventEvent.WebsiteMetaKeywords" class="form-control" />
+                <span asp-validation-for="EventEvent.WebsiteMetaKeywords" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EventEvent.WebsiteMetaOgImg" class="control-label"></label>
+                <input asp-for="EventEvent.WebsiteMetaOgImg" class="form-control" />
+                <span asp-validation-for="EventEvent.WebsiteMetaOgImg" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EventEvent.WebsiteId" class="control-label"></label>
+                <input asp-for="EventEvent.WebsiteId" class="form-control" />
+                <span asp-validation-for="EventEvent.WebsiteId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EventEvent.IsPublished" class="control-label"></label>
+                <input asp-for="EventEvent.IsPublished" class="form-control" />
+                <span asp-validation-for="EventEvent.IsPublished" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EventEvent.WebsiteMenu" class="control-label"></label>
+                <input asp-for="EventEvent.WebsiteMenu" class="form-control" />
+                <span asp-validation-for="EventEvent.WebsiteMenu" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EventEvent.MenuId" class="control-label"></label>
+                <input asp-for="EventEvent.MenuId" class="form-control" />
+                <span asp-validation-for="EventEvent.MenuId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
