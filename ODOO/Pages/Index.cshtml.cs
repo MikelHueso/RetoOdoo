@@ -20,7 +20,6 @@ namespace ODOO.Pages
         /// <summary>
         /// Genera una lista
         /// </summary>
-        /// <param name="OnGetAsync"></param>
         /// <returns>Devuelve una lista de Eventos de forma asincrona</returns>
         public async Task OnGetAsync()
         {
